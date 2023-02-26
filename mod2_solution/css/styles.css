@@ -1,9 +1,64 @@
 h1 {
-font-family: Helvetica, sans-serif;
-background-color: blue
-width: 50%
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-style: italic;
+	font-weight: 100;
+	font-size: 3em;
+  text-align: center;
+}
+* {
+	box-sizing: border-box;
 }
 
-div {
-background-color: gray;
+.container {
+  font-family: cursive;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    font-weight: 100;
+    font-size:1.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #a1, #a2 {
+
+  }
+  #a3 {
+    clear: both;
+  }
+}
+
+.container  article {
+  position: relative;
+  background-color: Gainsboro;
+	border-style: solid;
+	border-color: black;
+	border-width: .1em;
+	padding: .4em;
+	margin: .3em;
+}
+
+
+article > .name {
+  position: absolute;
+  top: -1em;
+  right: 0;
+  border-left: inherit;
+  border-bottom: inherit;
+}
+
+
+#a1 > .name {
+  background-color: orange;
+}
+
+#a2 > .name {
+  background-color: CornflowerBlue;
+}
+
+#a3 > .name {
+  background-color: yellow;
 }
