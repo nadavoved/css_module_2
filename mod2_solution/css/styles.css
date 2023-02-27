@@ -2,34 +2,34 @@ h1 {
   font-family: "Lucida Console", "Courier New", monospace;
   font-style: italic;
 	font-weight: 100;
-	font-size: 3em;
+	font-size: 3rem;
   text-align: center;
 }
+
 * {
 	box-sizing: border-box;
 }
 
+
 .container {
   font-family: cursive;
+  font-weight: 100;
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container, .subcontainer {
     display: flex;
     flex-direction: row;
-    font-weight: 100;
-    font-size:1.5em;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #a1, #a2 {
-
-  }
-  #a3 {
-    clear: both;
+  .subcontainer {
+    display: flex;
+    flex-direction: row;
   }
 }
+
 
 .container  article {
   position: relative;
